@@ -1,0 +1,6 @@
+// symmetric key
+Aes aes1 = Aes.Create();
+
+// asymmetric key
+RSA rsa1 = RSA.Create();
+RSA parameters rsaKeyInfo = rsa1.ExportParameters(false);

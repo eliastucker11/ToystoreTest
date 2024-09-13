@@ -1,0 +1,16 @@
+using System;
+namespace example
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+    
+  	string[] locations = {"Centennial","Denver","Greeley","Lakewood"};
+	
+	var searchResult = Array.Find(locations, element => element.StartsWith("L"));
+	
+	Console.WriteLine(searchResult);
+     }
+  }
+}

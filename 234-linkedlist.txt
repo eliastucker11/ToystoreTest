@@ -1,0 +1,24 @@
+using System;
+namespace example
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+    
+  	LinkedList<string> carColors = new LinkedList<string>();
+	carColors.AddLast("Red");
+	carColors.AddLast("Green");
+	carColors.AddLast("Silver");
+	carColors.AddLast("Maroon");
+	
+	//carColors.Remove("Green");
+	
+	foreach (string carColor in carColors)
+	{
+	    Console.WriteLine(carColor);
+	}
+	
+     }
+  }
+}

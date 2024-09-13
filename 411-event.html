@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Objects Example</title>
+<style>
+h2 {color: #000088;
+    font-size: 16pt;}
+</style>
+</head>
+<body>
+<h2>Select the button to show a special message!</h2>
+<p id="banner"></p>
+<button id="saleButton">Show the Sale message</button>
+
+<script>
+function saleMessage() {
+	document.getElementById('banner').innerHTML = "Special sale this weekend!"
+}
+document.getElementById('saleButton').addEventListener("click", saleMessage);
+
+
+</script>
+</body>
+</html>

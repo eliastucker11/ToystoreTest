@@ -1,0 +1,12 @@
+// example vulnerable to SQL injection
+connection.query("SELECT * FROM production.product WHERE productname = '"+ form.productname +"' AND color = '"+ form.color +"'", (error, results) => {
+  ...
+});
+
+// example not as vulnerable to SQL injection
+connection.query("SELECT * FROM production.product WHERE productname = ? AND color = ?",[
+  form.productname,
+  form.color
+], (error, results) => {
+  ...
+});

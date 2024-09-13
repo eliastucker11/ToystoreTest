@@ -1,0 +1,21 @@
+using System;
+namespace example
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+    
+  	string[] locations = {"Louisville","Centennial","Denver","Lakewood"};
+	Array.Sort(locations);
+	// Array.Reverse(locations);
+	
+	foreach (string location in locations)
+	{
+	    Console.WriteLine(location);
+	}
+
+	
+     }
+  }
+}
